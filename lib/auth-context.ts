@@ -1,4 +1,3 @@
-import { router } from "expo-router";
 import React from "react";
 
 export interface IAuthContext {
@@ -9,11 +8,13 @@ export interface IAuthContext {
 }
 
 function signIn() {
-  router.replace("/home");
+  // router.replace("/home");
+  console.log("signing out");
 }
 
 function signOut() {
-  router.replace("/");
+  // router.replace("/");
+  console.log("signing out");
 }
 
 export const AuthContext = React.createContext<IAuthContext>({
