@@ -3,6 +3,7 @@
     "name": "untitled-tree-thing",
     "slug": "untitled-tree-thing",
     "version": "1.0.0",
+    "scheme": "untitledtreething",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -29,7 +30,8 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-secure-store"
     ]
   }
 }
