@@ -13,6 +13,7 @@ AppState.addEventListener("change", (state) =>
     ? supabase.auth.startAutoRefresh()
     : supabase.auth.stopAutoRefresh()
 );
+
 export default function SignIn() {
   const { signIn } = useSession();
 

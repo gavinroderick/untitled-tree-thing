@@ -21,6 +21,8 @@ async function signIn(email: string, password: string) {
     console.error(error);
   }
 
+  const { data } = await supabase.auth.getSession();
+  Alert.alert("Created at: " + data.session?.user.created_at);
   router.replace("/home");
 }
 
